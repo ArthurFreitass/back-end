@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parte 1 (notas)</title>
+</head>
+<body>
+    <!--Crie um código JS que verifique se o aluno foi aprovado, reprovado ou de recuperação.
+    Caso a nota seja maior ou igual a 7 está aprovado.
+    Caso a nota esteja entre 4 e 6 está de recuperação
+    Caso a nota seja menor que 4 está reprovado.
+    Crie uma mensagem especial para quem tirar 10-->
+    <h2>Digite sua nota na prova:</h2>
+    <input type="text" id="input-number">
+    <button id="button-send">Enviar nota</button>
+    <script>
+        // Recuperar valores
+        const input = document.getElementById('input-number')
+        const button = document.getElementById('button-send')
+
+        // Adicionar evento
+
+        // Função
+
+        const sendNote = () => {
+            const noteExam = input.value
+            let noteTotal = Number(noteExam)
+            
+            if (isNaN(noteTotal)) {
+                alert('Erro: Digite um número')
+            } 
+            
+            else 
+            {
+                if(noteTotal >= 7) 
+                {
+                    alert("Aprovado")
+                }
+                else if(noteTotal >= 4 && noteTotal <= 6)
+                {
+                        alert("Recuperação")
+                }
+                else 
+                {
+                    alert("Reprovado")
+                }
+            }
+        }
+
+        // Evento
+
+        button.addEventListener('click', sendNote)
+    </script>
+</body>
+</html>
