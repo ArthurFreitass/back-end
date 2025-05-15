@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Par ou ímpar</title>
+  </head>
+  <body>
+    <h1>Par ou ímpar - Só que aleátorio</h1>
+    <h3>Digite (par) ou (ímpar) - Enter confirma</h3>
+    <input type="text" id="value-user" />
+    <script>
+      // Instruções
+      // Utilizando a função de números aleatórios do JS
+      //  crie um jogo de par ou impar
+      //  onde o usuário escolha se quer par ou impar e digite um número entre 1 e 9
+      // em seguida o código deve gerar um número aleatório entre 1 e 9
+      //  se o a soma dos números for igual ao escolhido pelo usuário ele vence, se não ele perde
+
+      // Recuperando os elementos
+
+      const input = document.getElementById("value-user");
+
+      // Funções
+
+      const choiceNumber = () => {
+        let number = Number(prompt("Digite um número entre 1 e 9"));
+        if (isNaN(number) || number < 1 || number > 9) {
+          alert("Erro: O valor dado deve ser um número, e estar entre 1 e 9.");
+        } else {
+          let number_Random = Math.floor(Math.random() * 9) + 1;
+          if (number + number_Random == number) {
+            alert("Parabéns, você venceu!");
+          } else {
+            alert("Tenta de novo :)");
+          }
+        }
+      };
+
+      const oddEven = () => {
+        let userValue = input.value;
+        if (userValue == "par" || userValue == "Par" || userValue == "PAR") {
+          choiceNumber();
+        } else if (
+          userValue == "impar" ||
+          userValue == "Impar" ||
+          userValue == "IMPAR" ||
+          userValue == "ímpar"
+        ) {
+          choiceNumber();
+        } else {
+          alert("ERRO: O valor dado deve ser ímpar ou par");
+        }
+      };
+
+      // Criando o evento
+
+      input.addEventListener("change", oddEven);
+    </script>
+  </body>
+</html>
