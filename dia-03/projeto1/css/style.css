@@ -8,14 +8,31 @@ body {
     box-sizing: border-box;
 }
 .header {
+    grid-area: header;
     background-color: rgb(59, 59, 59);
     height: 60px;
     margin-bottom: 30px;
 }
 
 nav {
+    grid-area: nav;
     padding: 15px;
     margin-bottom: 20px;
+}
+
+nav h3 {
+    margin-bottom: 30px;
+}
+
+a {
+    margin-right: 30px;
+}
+
+.main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 170px;
 }
 
 .text {
@@ -23,5 +40,32 @@ nav {
 }
 
 #personagens {
+    padding: 10px;
     margin-bottom: 25px;
+}
+
+.jujutsu {
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+/* GRID*/
+
+.gallery {
+    margin-top: 125px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";
+}
+
+
+.img {
+    width: 250px;
 }
