@@ -39,7 +39,7 @@ body {
     grid-area: main;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 100px;
+    gap: 80px;
 }
 
 .text {
@@ -62,8 +62,6 @@ body {
 /* GRID*/
 
 .gallery {
-    margin-top: 125px;
-    background-color: #1F1F2E;
     margin-top: 200px;
 }
 
@@ -87,7 +85,6 @@ body {
 .grid-galeria {
     display: grid;
     width: 100%;
-    gap: 1rem;
     grid-template-columns: repeat(2, 1fr);
 }
 
@@ -96,7 +93,6 @@ body {
 .forms {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
     font-size: large;
 }
 
@@ -149,6 +145,7 @@ body {
     text-decoration: none;
     color: #00d1d8;
     transition: color 0.3s;
+    font-family: monospace;
 }
 .footer a:hover{
     color: #E63946;
