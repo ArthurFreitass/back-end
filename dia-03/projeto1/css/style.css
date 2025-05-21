@@ -79,7 +79,8 @@ body {
 .img {
     width: 300px;
     height: 300px;
-    border-radius: 5px;
+    padding: 10px;
+    background-color: #1F1F2E;
 }
 
 .grid-galeria {
