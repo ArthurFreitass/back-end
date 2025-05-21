@@ -12,13 +12,14 @@
     ;
     min-height: 100vh;
     grid-template-rows: auto 1fr auto;
+    background-color: #0F0F1A;
 }
 #navbar{
     grid-area: header;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #0F0F1A;
+    background-color: #1F1F2E;
 }
 .nav_list{
     display: flex;
@@ -47,6 +48,11 @@
     border-radius: 12px;
     padding: 4px;
     margin: 10px;
+    color: #E5E5E5;
+}
+.Local_container iframe{
+    border-radius: 10px;
+    margin:10px ;
 }
 
 .story_container{
@@ -61,6 +67,8 @@
 }
 .story_container em{
     display: block;
+    margin-top: 5px;
+    text-decoration: underline;
 }
 .story_Text{
     margin: 10px;
@@ -71,10 +79,15 @@
     background-color: #1F1F2E;
     font-size: 1rem;
     margin: 10px;
+    color: #E5E5E5;
 }
 .Social_links{
-
+    display: flex;
+    justify-content: center;
+    gap:1rem;
     list-style: none;
+    font-size: 1.1rem;
+    margin: 10px;
 }
 .Social_links a{
     text-decoration: none;
