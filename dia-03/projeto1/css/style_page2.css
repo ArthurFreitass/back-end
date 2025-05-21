@@ -68,10 +68,12 @@
 }
 .Social_container{
     text-align: center;
+    background-color: #1F1F2E;
     font-size: 1rem;
     margin: 10px;
 }
 .Social_links{
+
     list-style: none;
 }
 .Social_links a{
