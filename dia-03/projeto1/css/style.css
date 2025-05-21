@@ -57,6 +57,8 @@ a {
 /* GRID*/
 
 .gallery {
+    margin-top: 125px;
+    background-color: #1F1F2E;
     margin-top: 200px;
 }
 
