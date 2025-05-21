@@ -13,6 +13,8 @@ body {
     height: 60px;
     margin-bottom: 30px;
 }
+/*Atualizar navbar*/
+
 
 nav {
     grid-area: nav;
@@ -129,6 +131,18 @@ a {
 }
 
 .footer {
-    background-color: #e63946;
+    grid-area: footer;
+    background-color: #1F1F2E;
+    color: white;
     text-align: center;
+    padding: 20px;
+}
+
+.footer a{
+    text-decoration: none;
+    color: #00d1d8;
+    transition: color 0.3s;
+}
+.footer a:hover{
+    color: #E63946;
 }
