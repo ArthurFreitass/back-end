@@ -7,6 +7,16 @@ body {
     margin: 0;
     box-sizing: border-box;
 }
+.grid-container {
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";
+}
+
 /*Atualizar navbar*/
 .header {
     grid-area: header;
@@ -35,6 +45,7 @@ body {
     color: #E63946;
 }
 
+/*conteudo principal*/
 .main {
     grid-area: main;
     display: grid;
@@ -65,15 +76,7 @@ body {
     margin-top: 200px;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-rows: auto auto 1fr auto;
-  grid-template-areas:
-    "header"
-    "nav"
-    "main"
-    "footer";
-}
+
 
 
 .img {
@@ -133,6 +136,7 @@ body {
     color: white;
 }
 
+/*rodape da pagina*/
 .footer {
     grid-area: footer;
     background-color: #1F1F2E;
