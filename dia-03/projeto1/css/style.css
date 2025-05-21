@@ -32,11 +32,14 @@ a {
     grid-area: main;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 170px;
+    gap: 100px;
 }
 
 .text {
-    line-height: 30px;    
+    line-height: 30px;  
+    padding: 20px;  
+    width: 350px;
+    font-size: 16px;
 }
 
 #personagens {
@@ -67,5 +70,11 @@ a {
 
 
 .img {
-    width: 250px;
+    width: 300px;
+    height: 300px;
+}
+
+.grid-galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
