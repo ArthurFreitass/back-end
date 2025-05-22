@@ -96,10 +96,8 @@ body{
 }
 .container{
     
-    
     place-items: center;
-    
-    
+     
     display: grid;
 	grid-template-areas: 
 	"header"
@@ -111,7 +109,6 @@ body{
 	min-height: 100vh;
 	max-width: 100vh;
 	gap: 30px;
-
 }
 
 
