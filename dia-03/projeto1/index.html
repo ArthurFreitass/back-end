@@ -4,11 +4,81 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projeto 1 First-page</title>
-    <link rel="stylesheet" href="/dia-03/projeto1/css/style.css" />
+    <title>First-Page</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="img/icons8-elemento-fogo-32.png" type="image/x-icon">
 </head>
-
 <body>
+    <div class="grid-container">
+            <header class="header">
+                <figure>
+                    <!--Logo-->
+                    <img src="img/icons8-elemento-fogo-96.png" alt="logo">
+                </figure>
+                <h1>Bem vindo</h1>
+            <nav>
+                <ul class="nav_list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="paginas/sobre.html">Sobre</a></li>
+                    <li><a href="paginas/galeria.html">Grau Tecnico</a></li>
+                </ul>
+            </nav>
+        </header>
+    <main class="main">
+        <section class="coluna text">
+            <h2 id="personagens">Os "Bests" de Jujutsu Kaisen</h2>
+            <div class="jujutsu">
+                <h3>Gojo</h3>
+                <p>Satoru Gojo é o professor dos protagonistas e o feiticeiro mais poderoso da atualidade. Ele possui habilidades extremamente raras, como os Seis Olhos e a Técnica do Infinito, que tornam quase impossível tocá-lo em combate. Gojo é excêntrico e arrogante, mas também se preocupa profundamente com seus alunos e deseja mudar o sistema injusto do mundo jujutsu.</p>
+            </div>
+            <div class="jujutsu">
+                <h3>Sukuna</h3>
+                <p>Ryomen Sukuna, conhecido como o "Rei das Maldições", foi um feiticeiro extremamente poderoso da antiguidade que se tornou uma maldição após a morte. Ele agora reside dentro de Yuji, esperando uma chance de retomar o controle total do corpo. Sukuna é cruel, sarcástico e impiedoso, mas muito inteligente e estratégico.</p>
+            </div>
+            <div class="jujutsu">
+                <h3>Itadori</h3>
+                <p>Yuji Itadori é o protagonista da história. Ele é um jovem com força física impressionante que, para salvar seus amigos, engole um dedo amaldiçoado pertencente a Sukuna, o mais poderoso espírito amaldiçoado da história. Isso faz com que Yuji se torne o receptáculo de Sukuna. Mesmo assim, ele mantém sua personalidade gentil, determinada e altruísta, lutando sempre para proteger os outros e encontrar um sentido para sua vida e morte.</p>
+            </div>
+            <div class="jujutsu">
+                <h3>Mahoraga</h3>
+                <p>Mahoraga é um dos seres mais poderosos e misteriosos do universo de Jujutsu Kaisen. Ele faz parte da técnica das Dez Sombras, usada por Megumi Fushiguro, e é o shikigami mais forte dessa técnica.</p>
+            </div>
+        </section>
+        <section class="coluna gallery">
+            <div class="grid-galeria">
+            <img class="img" src="img/Satoru-Gojo-from-jjk-EP3 (8).jpg" alt="Imagem ilustrativa do personagem Gojo">
+            <img class="img" src="img/yuta.jpg" alt="Imagem ilustrativa do personagem Yuta">
+            <img class="img" src="img/Sukuna _ Jujutsu Kaisen.jpg" alt="Imagem ilustrativa do personagem Sukuna">
+            <img class="img" src="img/itadori.jpg" alt="Imagem ilustrativa do personagem Itadori">
+            <img class="img" src="img/mahoraga.jpg" alt="Imagem ilustrativa do personagem Mahoraga">
+            <img class="img" src="img/toji.webp" alt="Imagem ilustrativa do personagem Toji">
+            <img class="img" src="img/maki.webp" alt="Imagem ilustrativa da personagem Maki">
+            <img class="img" src="img/hakari.jpg" alt="Imagem ilustrativa do personagem Hakari">
+            </div>
+        </section>
+        <section class="coluna forms">
+            <h2 style="margin-top: 35px;">Login</h2>
+            <form style="margin-top: 10px;">
+                <label class="label" for="name">Digite seu nome de usuário:</label>
+                <input type="text">
+                <label class="label" for="email">Digite seu email:</label>
+                <input type="email">
+                <!--Div para separar tudo-->
+                <div style="margin-top: 10px;">
+                    <label for="confirm">Aceita os termos?</label>
+                    <input type="checkbox">
+                </div>
+                <div id="div-button" style="margin-top: 10px">
+                    <button id="button">Prosseguir</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy;Jujutsu Kaisen Fan Portal. Todos os direitos reservados.</p>
+        <p>Contato: <a href="mailto:contato@jujutsukanal.com">contato@jujutsukanal.com</a></p>
+    </footer>
+    </div>
+    <script src="js/script.js"></script>
 </body>
-
 </html>

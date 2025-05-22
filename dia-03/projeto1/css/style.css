@@ -1,0 +1,153 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*Atualizar navbar*/
+.header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0F0F1A;
+    color: #E5E5E5;
+}
+.header h1{
+    margin-right: auto;
+}
+.nav_list{
+    display: flex;
+    list-style: none;
+    font-size: 1.1rem;
+    padding: 10px;
+    gap: 1rem;
+}
+.nav_list a{
+    text-decoration: none;
+    color: #00d1d8;
+    transition: color 0.4s;
+}
+.nav_list a:hover{
+    color: #E63946;
+}
+
+.main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 80px;
+}
+
+.text {
+    line-height: 40px;  
+    padding: 20px;  
+    width: 380px;
+    font-size: 16px;
+}
+
+#personagens {
+    padding: 10px;
+    margin-bottom: 25px;
+}
+
+.jujutsu {
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+/* GRID*/
+
+.gallery {
+    margin-top: 200px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";
+}
+
+
+.img {
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    background-color: #1F1F2E;
+}
+
+.grid-galeria {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/*Forms*/
+
+.forms {
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+}
+
+
+.forms input {
+    padding: 12px;
+    border-radius: 4px;
+    border: solid 1px #aaa;
+}
+
+.forms .label {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.forms div label {
+    margin-right: 0.5rem;
+}
+
+.forms div input[type="checkbox"] {
+    transform: scale(1.5);
+    border-radius: 0.2px;
+}
+
+#div-button button {
+    padding: 8px;
+    background-color: transparent;
+    border: 2px solid #e63946;
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px;
+    letter-spacing: 0.7px;
+    transition: 0.4s;
+}
+
+#button:hover {
+    background-color: #e63946;
+    color: white;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #1F1F2E;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer a{
+    text-decoration: none;
+    color: #00d1d8;
+    transition: color 0.3s;
+    font-family: monospace;
+}
+.footer a:hover{
+    color: #E63946;
+}
