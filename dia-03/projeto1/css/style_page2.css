@@ -19,7 +19,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: #E5E5E5;
     background-color: #1F1F2E;
+}
+#navbar h1{
+    margin-right:auto ;
 }
 .nav_list{
     display: flex;
@@ -41,18 +45,26 @@
     grid-area: main;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    max-width: 1200px;
+    margin: 20px auto;
 }
 .Local_container{
     background-color: #1f1f2e;
     border: 2px solid #6A0572;
     border-radius: 12px;
     padding: 4px;
-    margin: 10px;
+    margin: 15px;
     color: #E5E5E5;
+    text-align: center;
+    overflow: hidden;
 }
 .Local_container iframe{
+    max-width: 400px ;
+    max-height:450px ;
+    width: 100%;
     border-radius: 10px;
-    margin:10px ;
+    padding:5px ;
 }
 
 .story_container{
@@ -60,34 +72,37 @@
     border: 2px solid #4d02d8;
     border-radius: 12px;
     padding: 4px;
-    margin: 10px;
     text-align: center;
     font-size: 1rem;
     color: #E5E5E5;
+    overflow: hidden;
 }
 .story_container em{
     display: block;
-    margin-top: 5px;
+    margin-top: 10px;
     text-decoration: underline;
 }
 .story_Text{
-    margin: 10px;
     color:#E5E5E5;
 }
 .Social_container{
     text-align: center;
     background-color: #1F1F2E;
+    border: 2px solid #3d0083;
+    border-radius: 12px;
     font-size: 1rem;
-    margin: 10px;
+    padding: 15px;
+    margin: 15px;
     color: #E5E5E5;
 }
 .Social_links{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     gap:1rem;
     list-style: none;
     font-size: 1.1rem;
-    margin: 10px;
+    margin-top: 20px;
 }
 .Social_links a{
     text-decoration: none;
@@ -102,6 +117,7 @@
     background-color: #1F1F2E;
     padding: 10px;
     font-size: 1rem;
+    color: #E5E5E5;
     text-align: center;
 }
 #rodape a{
