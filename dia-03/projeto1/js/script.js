@@ -6,10 +6,9 @@ footer.appendChild(spanText)
 
 const body = document.querySelector('body')
 const main = document.querySelector('main')
-console.log(main);
 
 const buttonTheme = document.getElementById('button-theme')
-const buttonForms = document.getElementById('button')
+const buttonForms = document.getElementById('button-forms')
 
 window.onload = () => {
     const themeSave = localStorage.getItem('theme')
@@ -17,10 +16,17 @@ window.onload = () => {
         body.style.backgroundColor = '#fff'
         main.style.color = 'black'
         buttonTheme.innerHTML = '🌙'
+        buttonForms.style.backgroundColor = '#e63946'
+        buttonForms.style.color = 'white'
+        buttonForms.style.cursor = 'pointer'
     } else if (themeSave == 'dark') {
         body.style.backgroundColor = "#000"
         main.style.color = '#fff'
         buttonTheme.innerHTML = '☀️'
+        buttonForms.style.backgroundColor = '#e63946'
+        buttonForms.style.color = 'white'
+        buttonForms.style.cursor = 'pointer'
+
     } else {
         localStorage.setItem('theme', 'light')
     }
@@ -32,11 +38,16 @@ const alterTheme = () => {
         body.style.backgroundColor = '#000'
         main.style.color = '#fff'
         buttonTheme.innerHTML = '☀️'
+        buttonForms.style.backgroundColor = '#e63946'
+        buttonForms.style.color = '#fff'
+        
         localStorage.setItem('theme', 'dark')
     } else {
         body.style.backgroundColor = '#fff'
         main.style.color = '#000'
         buttonTheme.innerHTML = '🌙'
+        buttonForms.style.backgroundColor = 'transparent'
+        buttonForms.style.color = 'black'
         localStorage.setItem('theme', 'light')
     }
 }
