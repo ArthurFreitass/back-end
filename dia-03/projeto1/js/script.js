@@ -19,6 +19,7 @@ window.onload = () => {
         buttonForms.style.backgroundColor = '#e63946'
         buttonForms.style.color = 'white'
         buttonForms.style.cursor = 'pointer'
+        buttonForms.style.padding = '8px'
     } else if (themeSave == 'dark') {
         body.style.backgroundColor = "#000"
         main.style.color = '#fff'
@@ -26,6 +27,7 @@ window.onload = () => {
         buttonForms.style.backgroundColor = '#e63946'
         buttonForms.style.color = 'white'
         buttonForms.style.cursor = 'pointer'
+        buttonForms.style.padding = '8px'
 
     } else {
         localStorage.setItem('theme', 'light')
@@ -40,14 +42,16 @@ const alterTheme = () => {
         buttonTheme.innerHTML = '☀️'
         buttonForms.style.backgroundColor = '#e63946'
         buttonForms.style.color = '#fff'
+        buttonForms.style.padding = '8px'
         
         localStorage.setItem('theme', 'dark')
     } else {
         body.style.backgroundColor = '#fff'
         main.style.color = '#000'
         buttonTheme.innerHTML = '🌙'
-        buttonForms.style.backgroundColor = 'transparent'
-        buttonForms.style.color = 'black'
+        buttonForms.style.backgroundColor = '#e63946'
+        buttonForms.style.color = 'white'
+        buttonForms.style.padding = '8px'
         localStorage.setItem('theme', 'light')
     }
 }
