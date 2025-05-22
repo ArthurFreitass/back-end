@@ -95,8 +95,14 @@ body {
     display: flex;
     flex-direction: column;
     font-size: large;
+    margin: 20px;
 }
-
+.forms legend{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
 
 .forms input {
     padding: 12px;
@@ -106,11 +112,11 @@ body {
 
 .forms .label {
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
-.forms div label {
-    margin-right: 0.5rem;
+.forms label {
+    margin-top: 0.5rem;
 }
 
 .forms div input[type="checkbox"] {
@@ -140,6 +146,7 @@ body {
     color: white;
     text-align: center;
     padding: 20px;
+    font-size: 1rem;
 }
 
 .footer a{
