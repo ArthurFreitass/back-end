@@ -6,16 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>First-Page</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="shortcut icon" href="img/icons8-elemento-fogo-32.png" type="image/x-icon">
+    <link type="image/png" sizes="32x32" rel="icon" href="../img/icons8-elemento-fogo-32.png">
 </head>
 <body>
     <div class="grid-container">
-            <header class="header">
-                <figure>
+        <header class="header">
+            <figure>
                     <!--Logo-->
                     <img src="img/icons8-elemento-fogo-96.png" alt="logo">
-                </figure>
-                <h1>Bem vindo</h1>
+            </figure>
+
+            <h1>Bem vindo</h1>
+
             <nav>
                 <ul class="nav_list">
                     <li><a href="index.html">Home</a></li>
@@ -26,6 +28,7 @@
         </header>
     <main class="main">
         <section class="coluna text">
+
             <h2 id="personagens">Os "Bests" de Jujutsu Kaisen</h2>
             <div class="jujutsu">
                 <h3>Gojo</h3>
@@ -43,40 +46,51 @@
                 <h3>Mahoraga</h3>
                 <p>Mahoraga é um dos seres mais poderosos e misteriosos do universo de Jujutsu Kaisen. Ele faz parte da técnica das Dez Sombras, usada por Megumi Fushiguro, e é o shikigami mais forte dessa técnica.</p>
             </div>
+
         </section>
         <section class="coluna gallery">
             <div class="grid-galeria">
-            <img class="img" src="img/Satoru-Gojo-from-jjk-EP3 (8).jpg" alt="Imagem ilustrativa do personagem Gojo">
-            <img class="img" src="img/yuta.jpg" alt="Imagem ilustrativa do personagem Yuta">
-            <img class="img" src="img/Sukuna _ Jujutsu Kaisen.jpg" alt="Imagem ilustrativa do personagem Sukuna">
-            <img class="img" src="img/itadori.jpg" alt="Imagem ilustrativa do personagem Itadori">
-            <img class="img" src="img/mahoraga.jpg" alt="Imagem ilustrativa do personagem Mahoraga">
-            <img class="img" src="img/toji.webp" alt="Imagem ilustrativa do personagem Toji">
-            <img class="img" src="img/maki.webp" alt="Imagem ilustrativa da personagem Maki">
-            <img class="img" src="img/hakari.jpg" alt="Imagem ilustrativa do personagem Hakari">
+                <img class="img" src="img/Satoru-Gojo-from-jjk-EP3 (8).jpg" alt="Imagem ilustrativa do personagem Gojo">
+                <img class="img" src="img/yuta.jpg" alt="Imagem ilustrativa do personagem Yuta">
+                <img class="img" src="img/Sukuna _ Jujutsu Kaisen.jpg" alt="Imagem ilustrativa do personagem Sukuna">
+                <img class="img" src="img/itadori.jpg" alt="Imagem ilustrativa do personagem Itadori">
+                <img class="img" src="img/mahoraga.jpg" alt="Imagem ilustrativa do personagem Mahoraga">
+                <img class="img" src="img/toji.webp" alt="Imagem ilustrativa do personagem Toji">
+                <img class="img" src="img/maki.webp" alt="Imagem ilustrativa da personagem Maki">
+                <img class="img" src="img/hakari.jpg" alt="Imagem ilustrativa do personagem Hakari">
             </div>
         </section>
         <section class="coluna forms">
-            <h2 style="margin-top: 35px;">Login</h2>
             <form style="margin-top: 10px;">
-                <label class="label" for="name">Digite seu nome de usuário:</label>
-                <input type="text">
-                <label class="label" for="email">Digite seu email:</label>
-                <input type="email">
-                <!--Div para separar tudo-->
-                <div style="margin-top: 10px;">
-                    <label for="confirm">Aceita os termos?</label>
-                    <input type="checkbox">
-                </div>
-                <div id="div-button" style="margin-top: 10px">
-                    <button id="button">Prosseguir</button>
-                </div>
+                <fiedlset>
+
+                    <legend>Login</legend>
+                    
+                    <label class="label" for="name">Digite seu nome de usuário:</label>
+                    <input type="text" id="name" placeholder="Digite seu nome aqui">
+
+                    <label class="label" for="email">Digite seu email:</label>
+                    <input type="email" id="email" placeholder="Digite seu email aqui">
+                    <!--Div para separar tudo-->
+
+                    <div style="margin-top: 10px;">
+                        <label for="confirm">Aceita os termos?</label>
+                        <input type="checkbox" id="confirm">
+                    </div>
+
+                    <div id="div-button" style="margin-top: 10px">
+                        <button id="button">Prosseguir</button>
+                    </div>
+                    
+                </fiedlset>
             </form>
         </section>
     </main>
     <footer class="footer">
         <p>&copy;Jujutsu Kaisen Fan Portal. Todos os direitos reservados.</p>
         <p>Contato: <a href="mailto:contato@jujutsukanal.com">contato@jujutsukanal.com</a></p>
+        <p>Endereço: Rua dos Feiticeiros, nº 100 – Bairro Shibuya, Tóquio, Japão</p>
+        <p>Telefone: +81 11 2345-6789</p>
     </footer>
     </div>
     <script src="js/script.js"></script>
