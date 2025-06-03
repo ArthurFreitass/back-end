@@ -1,0 +1,35 @@
+body {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+main h1 {
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+#button {
+    background-color: rgb(21, 162, 218);
+    border-radius: 6px;
+    padding: 15px;
+    color: white;
+}
+
+#palavra-secreta {
+    font-size: 50px;
+}
+
+input {
+    border: transparent;
+    padding: 9px;
+    border-radius: 4px;
+}
+
+button {
+    background-color: green;
+    padding: 9px;
+    color: white;
+    border-radius: 4px;
+    border: none;
+}

@@ -1,13 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <header><h1>Jogo da forca</h1></header>
-    <h3 id="palavra-secreta"></h3>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogo da Forca</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Jogo da Forca</h1>
+      <p id="palavra-secreta" class="palavra">_ _ _ _</p>
+
+      <div class="info">
+        <p>Letras erradas: <span id="letras-erradas"></span></p>
+        <p>Tentativas restantes: <span id="tentativas"></span></p>
+      </div>
+
+      <div class="input-area">
+        <input
+          type="text"
+          id="letra"
+          maxlength="1"
+          placeholder="Digite uma letra"
+        />
+        <button onclick="verificarLetra()">Verificar</button>
+      </div>
+
+      <p id="mensagem" class="mensagem"></p>
+
+      <button id="button" onclick="novoJogo()" class="novo-jogo">
+        Novo Jogo
+      </button>
+    </main>
+
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>
