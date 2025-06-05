@@ -1,1 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro de Cachorros</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+    }
+    label, select, button {
+      display: block;
+      margin: 10px 0;
+    }
+    img {
+      max-width: 300px;
+      margin-top: 20px;
+    }
+    .output {
+      margin-top: 30px;
+      border-top: 1px solid #ccc;
+      padding-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Escolha seu cachorro</h1>
+
+  <label for="raca">Raça:</label>
+  <select id="raca"></select>
+
+  <label for="cor">Cor:</label>
+  <select id="cor"></select>
+
+  <button onclick="gerarCachorro()">Gerar cachorro</button>
+
+  <div class="output" id="resultado"></div>
+
+  <script>
+    // Superclasse Animal
+    class Animal {
+      constructor(patas, olhos) {
+        this.patas = patas;
+        this.olhos = olhos;
+      }
+    }
+
+    // Subclasse Cachorro
+    class Cachorro extends Animal {
+      constructor(raca, cor, patas, olhos) {
+        super(patas, olhos);
+        this.raca = raca;
+        this.cor = cor;
+      }
+    }
+
+    // Objeto com 4 raças
+    const racas = {
+      'Labrador': {
+        descricao: 'Labradores são amigáveis, inteligentes e ótimos com crianças.',
+        cores: ['Amarelo', 'Chocolate', 'Preto'],
+        imagem: 'img/labradores.jpg'
+      },
+      'Poodle': {
+        descricao: 'Poodles são inteligentes, brincalhões e fáceis de treinar.',
+        cores: ['Branco', 'Preto', 'Caramelo'],
+        imagem: 'img/Poodles.jpeg'
+      },
+      'Bulldog': {
+        descricao: 'Bulldogs são calmos, corajosos e companheiros leais.',
+        cores: ['Branco', 'Rajado', 'Caramelo'],
+        imagem: 'img/Bulldogs.jpeg'
+      },
+      'Husky': {
+        descricao: 'Huskies são atléticos, amigáveis e adoram climas frios.',
+        cores: ['Cinza', 'Preto e branco', 'Marrom'],
+        imagem: 'img/Huskie.jpeg'
+      }
+    };
+
+    // Preenche os selects com base no objeto
+    const selectRaca = document.getElementById('raca');
+    const selectCor = document.getElementById('cor');
+
+    function carregarRacas() {
+      for (let raca in racas) {
+        const option = document.createElement('option');
+        option.value = raca;
+        option.textContent = raca;
+        selectRaca.appendChild(option);
+      }
+      carregarCores(); // Carrega cores da primeira raça
+    }
+
+    function carregarCores() {
+      const racaSelecionada = selectRaca.value;
+      const cores = racas[racaSelecionada].cores;
+
+      // Limpa opções anteriores
+      selectCor.innerHTML = '';
+
+      cores.forEach(cor => {
+        const option = document.createElement('option');
+        option.value = cor;
+        option.textContent = cor;
+        selectCor.appendChild(option);
+      });
+    }
+
+    selectRaca.addEventListener('change', carregarCores);
+
+    function gerarCachorro() {
+      const raca = selectRaca.value;
+      const cor = selectCor.value;
+      const dados = racas[raca];
+
+      const cachorro = new Cachorro(raca, cor, 4, 2);
+
+      document.getElementById('resultado').innerHTML = `
+        <h2>${cachorro.raca} - ${cachorro.cor}</h2>
+        <p><strong>Descrição:</strong> ${dados.descricao}</p>
+        <p><strong>Patas:</strong> ${cachorro.patas}, <strong>Olhos:</strong> ${cachorro.olhos}</p>
+        <img src="${dados.imagem}" alt="Imagem de um ${cachorro.raca}">
+      `;
+    }
+
+    carregarRacas();
+  </script>
+</body>
+</html>
 
