@@ -9,16 +9,21 @@
 <body>
 
   <h1>Escolha seu cachorro</h1>
-
-  <label for="raca">Raça:</label>
-  <select id="raca"></select>
-
-  <label for="cor">Cor:</label>
-  <select id="cor"></select>
-
-  <button onclick="gerarCachorro()">Gerar cachorro</button>
-
-  <div class="output" id="resultado"></div>
+    <div class="gerador-de-cachorro">
+    
+        <fieldset>
+            <label for="raca">Raça:</label>
+            <select id="raca"></select>
+    
+            <label for="cor">Cor:</label>
+            <select id="cor"></select>
+    
+            <button onclick="gerarCachorro()">Gerar cachorro</button>
+        </fieldset>
+    </div>
+    <div class="flex">
+        <div class="output" id="resultado"></div>
+    </div>
 
   <script>
     // Superclasse Animal
