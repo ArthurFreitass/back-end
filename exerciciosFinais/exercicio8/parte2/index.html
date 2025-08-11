@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Box Interativo</title>
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body class="bg-light">
+
+  <div class="container py-5">
+
+    <div class="d-flex justify-content-center mb-4 gap-3">
+      <button class="btn btn-primary" id="btn1">Opção 1</button>
+      <button class="btn btn-success" id="btn2">Opção 2</button>
+      <button class="btn btn-warning" id="btn3">Opção 3</button>
+    </div>
+
+    <div class="card mx-auto" style="max-width: 600px;">
+      <img id="boxImage" src="img/foto1.jpg" class="card-img-top" alt="Imagem principal" />
+      <div class="card-body">
+        <p id="boxText" class="card-text">
+          Este é o conteúdo inicial do container. Clique nos botões acima para mudar este texto e a imagem.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="js/script.js"></script>
+  <!-- Bootstrap JS (opcional, não é necessário para este exemplo) -->
+</body>
+</html>
